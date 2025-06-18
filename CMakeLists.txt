@@ -5,8 +5,7 @@ project(${target} C CXX ASM)
 add_library(${target} INTERFACE)
 
 target_sources(${target} INTERFACE
-	${CMAKE_CURRENT_SOURCE_DIR}/src/cat24m01_generic.c
-	${CMAKE_CURRENT_SOURCE_DIR}/src/cat24m01_i2c_rp2040.c
+	${CMAKE_CURRENT_SOURCE_DIR}/src/rp2x_cat24m01.c
 )
 
 target_include_directories(${target} INTERFACE
